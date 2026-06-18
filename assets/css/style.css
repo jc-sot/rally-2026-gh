@@ -1,0 +1,32 @@
+:root{
+  --question-min-height: 200px;
+  --container-max-width: 900px;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+main.container {
+  max-width: var(--container-max-width);
+}
+
+/* Question box styling */
+.question-box{
+  min-height: var(--question-min-height);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  overflow: auto;
+}
+
+/* Make question text comfortable to read */
+#questionText p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Buttons spacing on small screens */
+@media (max-width: 576px) {
+  .col-12.d-flex.gap-2 { flex-direction: column; align-items: stretch; }
+  .ms-auto { margin-left: 0 !important; }
+}
