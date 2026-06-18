@@ -5,9 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const questionNumber = Number(params.get("q")) - 1;
 
 // Config
-  const currentUrl = window.location.origin;
-  console.log(currentUrl);
-  const DATA_URL = `${currentUrl}/assets/data/g${grade}.json`;
+
+  const DATA_URL_GH = "https://github.com/jc-sot/rally-2026-gh/tree/main/assets/data";
+  const DATA_URL_PATH = `/assets/data/g${grade}.json`;
+  let DATA_URL;
+
+  if (window.location.hostname.includes("github")) {
+    DATA_URL = `${DATA_URL_GH}/${DATA_URL_PATH}`;
+  } else {
+    DATA_URL = `.${DATA_URL_PATH}`;
+  }
+
   const STORAGE_KEY = 'quiz_app_state_v1';
   const MODAL_DURATION_MS = 1200;
 
