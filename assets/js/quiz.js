@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Config
 
-  const DATA_URL_GH = "https://github.com/jc-sot/rally-2026-gh/tree/main/assets/data";
+  const DATA_URL_GH = "https://github.com/jc-sot/rally-2026-gh/tree/main";
   const DATA_URL_PATH = `/assets/data/g${grade}.json`;
   let DATA_URL;
 
