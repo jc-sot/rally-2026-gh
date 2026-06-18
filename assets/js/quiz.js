@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const questionNumber = Number(params.get("q")) - 1;
 
 // Config
-  const DATA_URL = `./assets/data/g${grade}.json`;
+  const currentUrl = window.location.origin;
+  console.log(currentUrl);
+  const DATA_URL = `${currentUrl}/assets/data/g${grade}.json`;
   const STORAGE_KEY = 'quiz_app_state_v1';
   const MODAL_DURATION_MS = 1200;
 
