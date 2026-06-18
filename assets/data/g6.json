@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Geography",
+    "text": "What is the capital of France?",
+    "answers": ["paris"],
+    "type": "text"
+  },
+  {
+    "id": 2,
+    "title": "Math",
+    "text": "Compute 7 + 6.",
+    "answers": ["13"],
+    "type": "text"
+  },
+  {
+    "id": 3,
+    "title": "Short answer",
+    "text": "Name the process by which plants make food using sunlight.",
+    "answers": ["photosynthesis"],
+    "type": "text"
+  }
+]

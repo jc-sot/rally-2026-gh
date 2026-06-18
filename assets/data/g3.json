@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "text": "Compute the sum: <samp>1111 + 0100</samp>. Write your answer as an <b>eight-bit binary number</b>.",
+    "answers": ["0001 0011", "00010011"],
+    "type": "text"
+  },
+  {
+    "id": 2,
+    "text": "How many <samp>1</samp>'s are in the binary representation of 255?",
+    "answers": ["8", "eight", "Eight"],
+    "type": "text"
+  },
+  {
+    "id": 3,
+    "text": "I am a type of Cipher that shifts every letter in the alphabet by a certain number. What is my name?",
+    "answers": ["Caesar's Cipher", "Caesar Cipher"],
+    "type": "text"
+  },
+  {
+    "id": 4,
+    "text": "What is the output of the following Python code?<br /><br /><pre><code class=\"language-python\">a=10\nb=a <br />\na=a/2<br />\nprint(b)</code></pre>",
+    "answers": [10],
+    "type": "text"
+  },
+  {
+    "id": 5,
+    "text": "In Python, what error do you get when you try to add a <samp>string</samp> with a <samp>int</samp>?",
+    "answers": ["TypeError", "Type Error"],
+    "type": "text"
+  },
+  {
+    "id": 6,
+    "text": "What is the data type of <code>True</code> and <code>False</code>?",
+    "answers": ["bool", "boolean"]
+  },
+  {
+    "id": 7,
+    "text": "The following code gives an error! Write its ErrorType.<br /><br /> <pre><code class=\"language-python\">num = ten\nten = 10\nprint(10 + ten)</code></pre>",
+    "answers": ["NameError", "Name Error"],
+    "type": "text"
+  },
+  {
+    "id": 8,
+    "text": "Write the output of the following Python code:<br /><br /> <pre><code class=\"language-python\">fruit=\"banana\"\nfruit=\"kiwi\"\nprint(fruit * 3)</code></pre>",
+    "answers": ["kiwikiwikiwi"],
+    "type": "text"
+  }
+]

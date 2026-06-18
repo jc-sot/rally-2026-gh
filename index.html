@@ -3,90 +3,160 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quiz App</title>
+  <title>Rally 2026</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    :root {
+      --container-max-width: 900px;
+    }
+
+    main.container {
+      max-width: var(--container-max-width);
+    }
+
+    .level-card {
+      min-height: 180px;
+      border-radius: 8px;
+      padding: 1.5rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.15s ease;
+    }
+
+    .level-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .level-1 { background: #0d6efd; }   /* Blue */
+    .level-2 { background: #198754; }   /* Green */
+    .level-3 { background: #fd7e14; }   /* Orange */
+    .level-4 { background: #dc3545; }   /* Red */
+
+    .level-card a {
+      color: white;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+  </style>
 </head>
 <body class="bg-light">
 
   <!-- Menu -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Quiz Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">All Questions</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html">Main Page</a></li>
-        </ul>
-      </div>
+      <a class="navbar-brand" href="index.html">Spirit of Technology Rally 2026</a>
     </div>
   </nav>
 
-  <!-- App container -->
-  <main class="container py-5" id="app">
-    <!-- Header -->
-    <header class="mb-4 d-flex justify-content-between align-items-start">
-      <div>
-        <h1 class="h4 mb-1">Question <span id="questionNumber">1</span> / <span id="totalQuestions">0</span></h1>
-        <p id="questionTitle" class="text-muted mb-0"></p>
-      </div>
-      <div class="text-end">
-        <div class="small text-muted">Score: <span id="score">0</span></div>
-        <div class="small text-muted">Progress: <span id="progress">0%</span></div>
-      </div>
+  <!-- Main content -->
+  <main class="container py-5">
+    <header class="mb-5">
+      <h1 class="h3">Part 3: Questions Round!</h1>
+      <p class="text-muted">Choose a question!</p>
     </header>
-
-    <!-- Question box -->
-    <section class="row g-4">
-      <div class="col-12">
-        <div class="question-box p-4 bg-white border rounded d-flex">
-          <div id="questionText" class="flex-grow-1 align-self-stretch">
-            <!-- Question text injected here -->
+    <div class="row g-4">
+      <!-- Level 1 -->
+      <div class="col-12 col-md-3 col-lg-3">
+        <div class="level-card level-1">
+          <div>
+            <h2 class="h5 mb-2">Grade 3</h2>
+          </div>
+          <div>
+            <ul>
+                <li><a href="./quiz.html?g=3&q=1">Question 1</a></li>
+                <li><a href="./quiz.html?g=3&q=2">Question 2</a></li>
+                <li><a href="./quiz.html?g=3&q=3">Question 3</a></li>
+                <li><a href="./quiz.html?g=3&q=4">Question 4</a></li>
+                <li><a href="./quiz.html?g=3&q=5">Question 5</a></li>
+                <li><a href="./quiz.html?g=3&q=6">Question 6</a></li>
+                <li><a href="./quiz.html?g=3&q=7">Question 7</a></li>
+                <li><a href="./quiz.html?g=3&q=8">Question 8</a></li>
+                <li><a href="./quiz.html?g=3&q=9">Question 9</a></li>
+                <li><a href="./quiz.html?g=3&q=10">Question 10</a></li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <!-- Answer area -->
-      <div class="col-12">
-        <label for="answerInput" class="form-label">Your Answer</label>
-        <textarea id="answerInput" class="form-control" rows="4" placeholder="Type your answer here"></textarea>
-      </div>
-
-      <!-- Controls -->
-      <div class="col-12 d-flex gap-2">
-        <button id="submitBtn" class="btn btn-primary">Submit</button>
-        <button id="clearBtn" class="btn btn-outline-secondary">Clear</button>
-        <div class="ms-auto">
-          <button id="prevBtn" class="btn btn-outline-primary me-1">Previous</button>
-          <button id="nextBtn" class="btn btn-outline-primary">Next</button>
+      <!-- Level 2 -->
+      <div class="col-12 col-md-3 col-lg-3">
+        <div class="level-card level-2">
+          <div>
+            <h2 class="h5 mb-2">Grade 4</h2>
+          </div>
+          <ul>
+                <li><a href="./quiz.html?g=4&q=1">Question 1</a></li>
+                <li><a href="./quiz.html?g=4&q=2">Question 2</a></li>
+                <li><a href="./quiz.html?g=4&q=3">Question 3</a></li>
+                <li><a href="./quiz.html?g=4&q=4">Question 4</a></li>
+                <li><a href="./quiz.html?g=4&q=5">Question 5</a></li>
+                <li><a href="./quiz.html?g=4&q=6">Question 6</a></li>
+                <li><a href="./quiz.html?g=4&q=7">Question 7</a></li>
+                <li><a href="./quiz.html?g=4&q=8">Question 8</a></li>
+                <li><a href="./quiz.html?g=4&q=9">Question 9</a></li>
+                <li><a href="./quiz.html?g=4&q=10">Question 10</a></li>
+            </ul>
         </div>
       </div>
-    </section>
-  </main>
 
-  <!-- Modal response -->
-  <div class="modal fade" id="responseModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-sm modal-dialog-centered">
-      <div class="modal-content text-center">
-        <div class="modal-body py-4">
-          <div id="modalIcon" class="mb-2"></div>
-          <div id="modalMessage" class="fw-semibold"></div>
+      <!-- Level 3 -->
+      <div class="col-12 col-md-3 col-lg-3">
+        <div class="level-card level-3">
+          <div>
+            <h2 class="h5 mb-2">Grade 5</h2>
+          </div>
+          <div>
+            <ul>
+                <li><a href="./quiz.html?g=5&q=1">Question 1</a></li>
+                <li><a href="./quiz.html?g=5&q=2">Question 2</a></li>
+                <li><a href="./quiz.html?g=5&q=3">Question 3</a></li>
+                <li><a href="./quiz.html?g=5&q=4">Question 4</a></li>
+                <li><a href="./quiz.html?g=5&q=5">Question 5</a></li>
+                <li><a href="./quiz.html?g=5&q=6">Question 6</a></li>
+                <li><a href="./quiz.html?g=5&q=7">Question 7</a></li>
+                <li><a href="./quiz.html?g=5&q=8">Question 8</a></li>
+                <li><a href="./quiz.html?g=5&q=9">Question 9</a></li>
+                <li><a href="./quiz.html?g=5&q=10">Question 10</a></li>
+            </ul>
+          </div>
         </div>
       </div>
+
+      <!-- Level 4 -->
+      <div class="col-12 col-md-3 col-lg-3">
+        <div class="level-card level-4">
+          <div>
+            <h2 class="h5 mb-2">Grade 6</h2>
+          </div>
+          <div>
+            <ul>
+                <li><a href="./quiz.html?g=6&q=1">Question 1</a></li>
+                <li><a href="./quiz.html?g=6&q=2">Question 2</a></li>
+                <li><a href="./quiz.html?g=6&q=3">Question 3</a></li>
+                <li><a href="./quiz.html?g=6&q=4">Question 4</a></li>
+                <li><a href="./quiz.html?g=6&q=5">Question 5</a></li>
+                <li><a href="./quiz.html?g=6&q=6">Question 6</a></li>
+                <li><a href="./quiz.html?g=6&q=7">Question 7</a></li>
+                <li><a href="./quiz.html?g=6&q=8">Question 8</a></li>
+                <li><a href="./quiz.html?g=6&q=9">Question 9</a></li>
+                <li><a href="./quiz.html?g=6&q=10">Question 10</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
+  </main>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Quiz JS -->
-  <script src="./assets/js/quiz.js"></script>
 </body>
 </html>

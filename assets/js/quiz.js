@@ -1,22 +1,21 @@
 // JSON-driven quiz single-page app
 document.addEventListener('DOMContentLoaded', () => {
-  // Config
-  const DATA_URL = './assets/data/questions.json';
+  const params = new URLSearchParams(document.location.search);
+  const grade = Number(params.get("g"));
+  const questionNumber = Number(params.get("q")) - 1;
+
+// Config
+  const DATA_URL = `./assets/data/g${grade}.json`;
   const STORAGE_KEY = 'quiz_app_state_v1';
   const MODAL_DURATION_MS = 1200;
 
   // Elements
+  const gradeEl = document.getElementById('grade');
   const qNumEl = document.getElementById('questionNumber');
-  const totalEl = document.getElementById('totalQuestions');
-  const titleEl = document.getElementById('questionTitle');
   const qTextEl = document.getElementById('questionText');
   const answerInput = document.getElementById('answerInput');
   const submitBtn = document.getElementById('submitBtn');
   const clearBtn = document.getElementById('clearBtn');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  const scoreEl = document.getElementById('score');
-  const progressEl = document.getElementById('progress');
 
   const responseModalEl = document.getElementById('responseModal');
   const modalMessage = document.getElementById('modalMessage');
@@ -59,27 +58,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const res = await fetch(DATA_URL, { cache: 'no-store' });
     if (!res.ok) throw new Error('Failed to load questions');
     questions = await res.json();
-    totalEl.textContent = questions.length;
   }
 
   // Render current question
   function render() {
     if (!questions.length) return;
-    const q = questions[state.currentIndex];
+
+    const q = questions[questionNumber];
+    gradeEl.textContent = grade;
     qNumEl.textContent = q.id;
-    titleEl.textContent = q.title || '';
-    qTextEl.innerHTML = `<p>${escapeHtml(q.text)}</p>`;
+    qTextEl.innerHTML = `<p>${q.text}</p>`;
 
     // Populate answer if saved
     const saved = state.answers[q.id];
     answerInput.value = saved ? saved.value : '';
-
-    // Update navigation and score
-    prevBtn.disabled = state.currentIndex === 0;
-    nextBtn.disabled = state.currentIndex === questions.length - 1;
-    scoreEl.textContent = state.score;
-    const pct = Math.round((Object.keys(state.answers).length / questions.length) * 100);
-    progressEl.textContent = `${pct}%`;
+    hljs.highlightAll();
   }
 
   // Simple HTML escape
@@ -112,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Evaluate answer for current question
   function evaluateCurrent() {
-    const q = questions[state.currentIndex];
+    const q = questions[questionNumber];
     const raw = answerInput.value || '';
     const normalized = normalizeAnswer(raw);
 
@@ -147,23 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
     answerInput.focus();
   }
 
-  // Navigation
-  function goTo(index) {
-    if (index < 0 || index >= questions.length) return;
-    state.currentIndex = index;
-    saveState();
-    render();
-  }
-
-  // Keyboard shortcuts
-  function setupShortcuts() {
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight') nextBtn.click();
-      if (e.key === 'ArrowLeft') prevBtn.click();
-      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'enter') submitBtn.click();
-    });
-  }
-
   // Initialize app
   async function init() {
     try {
@@ -178,8 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
       // Event listeners
       submitBtn.addEventListener('click', evaluateCurrent);
       clearBtn.addEventListener('click', clearCurrent);
-      prevBtn.addEventListener('click', () => goTo(state.currentIndex - 1));
-      nextBtn.addEventListener('click', () => goTo(state.currentIndex + 1));
 
       // Allow Enter+Ctrl inside textarea to submit
       answerInput.addEventListener('keydown', (e) => {
@@ -189,7 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      setupShortcuts();
     } catch (err) {
       qTextEl.innerHTML = `<p class="text-danger">Error loading quiz: ${escapeHtml(err.message)}</p>`;
     }
