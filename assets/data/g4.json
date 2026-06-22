@@ -1,25 +1,62 @@
 [
   {
     "id": 1,
-    "title": "Geography",
-    "text": "What is the capital of France?",
-    "answers": ["paris"],
+    "text": "I am a circuit component that protects the entire circuit from overheating! What is my name?",
+    "answers": ["resistor"],
     "type": "text"
   },
   {
     "id": 2,
-    "text": "Compute 7 + 6.",
-    "answers": ["13"],
+    "text": "Calculate the missing value. Make sure you include the unit (e.g. V for volts):<br><br>V = 1 V<br>R = 5000 Ω",
+    "answers": ["0.0002 A", "0.0002A"],
     "type": "text"
   },
   {
     "id": 3,
-    "text": "Name the process by which plants make food using sunlight.",
-    "answers": ["photosynthesis"],
+    "text": "Compute:<br /><br /><code>0001 0000  + 0001 0011 - 0000 1111 - 0000 1010 - 0000 1010</code>.<br /><br />Write your answer as an <b>eight-bit binary number</b>.",
+    "answers": ["0000 0000", "00000000"],
     "type": "text"
   },
   {
     "id": 4,
-    :
+    "text": "A series circuit has three resistors. The values of the resistors are: <br><br>100 Ω, 150 Ω, and 350 Ω.<br><br>If the current of the circuit is 0.005 A, what is the voltage? Make sure you include the unit. ",
+    "answers": ["3 V", "3.0 V", "3V", "3.0V"],
+    "type": "text"
+  },
+  {
+    "id": 5,
+    "text": "Write an example of a <code>boolean</code> value in JavaScript.",
+    "answers": ["true", "false"],
+    "type": "text"
+  },
+  {
+    "id": 6,
+    "text": "How many different whole numbers can be written using an eight-bit binary number?",
+    "answers": ["256"],
+    "type": "text"
+  },
+  {
+    "id": 7,
+    "text": "What is the output of the following JavaScript code?<br><br><pre><code class=\"language-javascript\">var ten = 10;\nvar nine = 9;\nvar number = 10 + 9;\nconsole.log(number * 2);</code></pre>",
+    "answers": ["38"],
+    "type": "text"
+  },
+  {
+    "id": 8,
+    "text": "A three-band resistor has a resistance of <code>74,000,000,000 Ω</code>. Write its bands, with each colour separated by a space.<br /><br />(For example, the answer for a <code>220 Ω</code> resistor would be <code>Red Red Brown</code>.)",
+    "answers": ["Purple Yellow White"],
+    "type": "text"
+  },
+  {
+    "id": 9,
+    "text": "Write the correct line of p5 code that uses the <code>ellipse()</code> function to draw a <b>circle</b> with width 50, with its centre at the coordinates (80, 100). <br/><br/>Do not include spaces or semicolons in your answer!",
+    "answers": ["ellipse(80,100,50)", "ellipse(80,100,50,50)"],
+    "type": "text"
+  },
+  {
+    "id": 10,
+    "text": "A certain series circuit needs a voltage of 20 V and a current of 0.005 A. You have a magical resistor bag containing an unlimited amount of the following resistors:<br /><br />5000 Ω, 1250 Ω, 750 Ω, 100 Ω, 10 Ω, and 1 Ω.<br /><br />What is the least amount of resistors that you need to make the resistance value required for this circuit?",
+    "answers": ["4", "Four"],
+    "type": "text"
   }
 ]

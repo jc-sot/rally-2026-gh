@@ -19,7 +19,7 @@
   },
   {
     "id": 4,
-    "text": "What is the output of the following Python code?<br /><br /><pre><code class=\"language-python\">a=10\nb=a <br />\na=a/2<br />\nprint(b)</code></pre>",
+    "text": "What is the output of the following Python code?\n\n<pre><code class=\"language-python\">a=10\nb=a \n\na=a/2\n\nprint(b)</code></pre>",
     "answers": [10],
     "type": "text"
   },
@@ -31,25 +31,32 @@
   },
   {
     "id": 6,
-    "text": "What is the data type of <code>True</code> and <code>False</code>?",
-    "answers": ["bool", "boolean"]
+    "text": "This term describes circuit components that use electricity to function. These circuit components get electricity from a power source. What is its name?",
+    "answers": ["Load", "load"],
+    "type": "text"
   },
   {
     "id": 7,
-    "text": "The following code gives an error! Write its ErrorType.<br /><br /> <pre><code class=\"language-python\">num = ten\nten = 10\nprint(10 + ten)</code></pre>",
+    "text": "The following code gives an error! Write its ErrorType.\n\n<pre><code class=\"language-python\">num = ten\nten = 10\nprint(10 + ten)</code></pre>",
     "answers": ["NameError", "Name Error"],
     "type": "text"
   },
   {
     "id": 8,
-    "text": "Write the output of the following Python code:<br /><br /> <pre><code class=\"language-python\">fruit=\"banana\"\nfruit=\"kiwi\"\nprint(fruit * 3)</code></pre>",
+    "text": "Write the output of the following Python code:\n\n <pre><code class=\"language-python\">fruit=\"banana\"\nfruit=\"kiwi\"\nprint(fruit * 3)</code></pre>",
     "answers": ["kiwikiwikiwi"],
     "type": "text"
   },
   {
     "id": 9,
-    "text": "",
-    "answers": ["kiwikiwikiwi"],
+    "text": "What is the output of the following Python code?<br><pre><code class=\"language-python\">condition1 = True\ncondition2 = True and False\nprint(condition1 and condition2)</code></pre>",
+    "answers": ["False"],
+    "type": "text"
+  },
+  {
+    "id": 10,
+    "text": "I am a type of circuit that gives an electron <b>multiple</b> ways to travel from the one end of a battery to the other end of the battery. What is my name?",
+    "answers": ["Parallel", "Parallel Circuit"],
     "type": "text"
   }
 ]
