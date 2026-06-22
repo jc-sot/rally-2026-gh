@@ -18,7 +18,7 @@ This document describes the questions and answers for each part.
 | 6 	| This term describes circuit components that use electricity to function. These circuit components get electricity from a power source. What is its name? 	| Load 	|
 | 7 	| The following code gives an error! Write its ErrorType.<br><pre>num = ten<br />ten = 10<br />print(10 + ten)</pre> 	| `NameError` 	|
 | 8 	| Write the output of the following Python code:<br><br> <pre>fruit="banana"<br />fruit="kiwi"<br />print(fruit * 3)</pre> 	| `kiwikiwikiwi` 	|
-| 9 	| What is the output of the following Python code?<br><br> <pre>python<br />condition1 = True<br />condition2 = True and False<br />print(condition1 and condition2)``` 	| `False` 	|
+| 9 	| What is the output of the following Python code?<br><pre><br />condition1 = True<br />condition2 = True and False<br />print(condition1 and condition2)	| `False` 	|
 | 10 	| I am a type of circuit that gives an electron **multiple** ways to travel from the one end of a battery to the other end of the battery. What is my name? 	| Parallel or Parallel Circuit 	|
 
 ## Grade 4
