@@ -1,21 +1,30 @@
 # Questions_Answers.md
 This document describes the questions and answers for each part.
 
-# Part 1 - Encryptions
-Editor Note: Taken from G5 Encryptions of the day. Will change on Thursday
-
+# Part 1 - Encryptions [5 minutes]
 ## Points Scheme
-| Points 	| Description 	|
-|---	|---	|
-| 3 	| First Team to finish an encryption 	|
-| 2 	| Second Team to finish a encryption 	|
-| 1 	| Third, Fourth, etc. team to finish a encryption 	|
+For each team, +1 point for each member to finish any encryption, order does not matter.
 
-# Part 2 - Typing Round
+Editor Note: Q10 is taken from G5 Encryptions of the day. Will change for Thursday.
+
+| Encryption # 	| Description 	| **Examples** 	| **Ciphertext** 	| **Answer** 	|
+|---	|---	|---	|---	|---	|
+| 1 	| Caesar's Cipher with Shift -1 	| HELLO → GDKKN<br>BONJOUR → ANMINTQ 	| SDBGMNKNFX 	| TECHNOLOGY 	|
+| 2 	| Caesar's Cipher with Shift +1 	| HELLO → IFMMP<br>BONJOUR → CPOKPVS 	| KBWBTDSJQU 	| JAVASCRIPT 	|
+| 3 	| Numeric Binary Cipher (4-bit) 	| DOG → 0100 1111 0111<br>BAGEL → 0010 0001 0111 0101 1100  	| 0011 0111 0100 0101 	| CODE 	|
+| 4 	| Numeric Cipher 	| HELLO → 8 5 12 12 15<br>BONJOUR → 15 14 10 15 21 18 	| 16 25 20 8 15 14 	| PYTHON 	|
+| 5 	| Half-Half (pig-latin) Cipher 	| BANANA → ANABAN<br>CALCULATOR → LATORCALCU<br>LIQUID → UIDLIQ 	| UTERCOM 	| COMPUTER 	|
+| 6 	| ATBASH Cipher 	| APPLE → ZKKOV<br>BANANA → YZMZMZ<br>ABCXYZ → ZYXCBA 	| VIILI 	| ERROR 	|
+| 7 	| "Simple reflection" Cipher 	| FLAVOUR → RUOVALF<br>MIRROR → RORRIM 	| NAELOOB 	| BOOLEAN 	|
+| 8 	| Vigenere starting at 0 (Caesar's Cipher, modified) 	| APPLE → AQROI<br>BANANA → BBPDQE<br>CAT → CBV 	| SUTKQK 	| STRING 	|
+| 9 	| Vigenere starting at 0, backwards (Caesar's Cipher, modified) 	| APPLE → ESRME<br>BANANA → GEQCMA<br>CAT → EBT 	| UDNMY 	| RALLY 	|
+| 10 	| G5 "PigPen" Symbolic Cipher 	| (See examples on handout) 	| (See handout) 	| SUMMER 	|
+
+# Part 2 - Typing Round [5 minutes]
 ## Points Scheme
 For each team, +1 point for each member to finish the typing drill, no matter how fast.
 
-# Part 3 - Questions Round
+# Part 3 - Questions Round [10 minutes]
 ## Points Scheme
 | Points 	| Description 	|
 |---	|---	|
