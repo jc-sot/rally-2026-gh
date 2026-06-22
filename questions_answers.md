@@ -5,6 +5,7 @@ This document describes the questions and answers for each part.
 ## Points Scheme
 For each team, +1 point for each member to finish any encryption, order does not matter.
 
+## Encryptions
 Editor Note: Q10 is taken from G5 Encryptions of the day. Will change for Thursday.
 
 | Encryption # 	| Description 	| **Examples** 	| **Ciphertext** 	| **Answer** 	|
