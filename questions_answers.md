@@ -2,11 +2,26 @@
 This document describes the questions and answers for each part.
 
 # Part 1 - Encryptions
-##
+Editor Note: Taken from G5 Encryptions of the day. Will change on Thursday
+
+## Points Scheme
+| Points 	| Description 	|
+|---	|---	|
+| 3 	| First Team to finish an encryption 	|
+| 2 	| Second Team to finish a encryption 	|
+| 1 	| Third, Fourth, etc. team to finish a encryption 	|
 
 # Part 2 - Typing Round
+## Points Scheme
+For each team, +1 point for each member to finish the typing drill, no matter how fast.
 
 # Part 3 - Questions Round
+## Points Scheme
+| Points 	| Description 	|
+|---	|---	|
+| 3 	| First Team to finish a question 	|
+| 2 	| Second Team to finish a question 	|
+| 1 	| Third, Fourth, etc. team to finish a question 	|
 ## Grade 3
 | Question # 	| Question Text 	| Answer(s) 	|
 |---	|---	|---	|
