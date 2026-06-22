@@ -13,7 +13,7 @@
   },
   {
     "id": 3,
-    "text": "I am a type of Cipher that shifts every letter in the alphabet by a certain number. What is my name?",
+    "text": "I am a type of Cipher that shifts every letter in the alphabet by a certain number. What is my name?\n<b>NOTE</b>: You must spell my name correctly!",
     "answers": ["Caesar's Cipher", "Caesar Cipher"],
     "type": "text"
   },
@@ -43,6 +43,12 @@
   {
     "id": 8,
     "text": "Write the output of the following Python code:<br /><br /> <pre><code class=\"language-python\">fruit=\"banana\"\nfruit=\"kiwi\"\nprint(fruit * 3)</code></pre>",
+    "answers": ["kiwikiwikiwi"],
+    "type": "text"
+  },
+  {
+    "id": 9,
+    "text": "",
     "answers": ["kiwikiwikiwi"],
     "type": "text"
   }

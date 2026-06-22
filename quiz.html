@@ -14,7 +14,7 @@
     <!-- Highlight.js CSS theme -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.css"
     />
 
     <!-- Highlight.js library -->
@@ -37,9 +37,10 @@
     </nav>
 
     <!-- App container -->
-    <div class="container">
+    <div class="d-flex">
         <button type="button" class="btn btn-link"><a href="index.html">&lt Back to Questions</a></button>
     </div>
+
     <main class="container py-5" id="app">
       <!-- Header -->
       <header class="mb-4 d-flex justify-content-between align-items-start">
@@ -62,12 +63,12 @@
         </div>
 
         <!-- Answer area -->
-        <div class="col-12">
+        <div class="col-6">
           <label for="answerInput" class="form-label">Your Answer</label>
           <textarea
             id="answerInput"
             class="form-control"
-            rows="4"
+            rows="1"
             placeholder="Type your answer here"
           ></textarea>
         </div>
